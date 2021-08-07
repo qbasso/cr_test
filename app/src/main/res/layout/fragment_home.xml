@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_margin="@dimen/margin_small"
+        android:id="@+id/searchInput"
+        android:layout_width="0dp"
+        android:padding="@dimen/padding_small"
+        android:drawableStart="@drawable/ic_search_hint"
+        android:background="@drawable/bg_white_haze_rounded"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/closeIcon"
+        android:hint="@string/senior_product_manager"
+        android:layout_height="@dimen/search_bar_height"
+        android:drawableLeft="@drawable/ic_search_hint" />
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="@id/searchInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/searchInput"
+        app:layout_constraintBottom_toBottomOf="@id/searchInput"
+        android:id="@+id/closeIcon"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:src="@drawable/ic_baseline_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_default" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchInput"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CrowthTest</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_explorer">Explorer</string>
+    <string name="title_nets">Net of Nets</string>
+    <string name="title_activity">Activity</string>
+    <string name="title_post_job">Post a Job</string>
+    <string name="black_lives_matter">Black Lives Matter</string>
+    <string name="help_friends_and_get_paid">Help friends and get paid</string>
+    <string name="sr_business_manager">Sr. Business Manager\nChief of Staff</string>
+    <string name="maya_is_interested_in">Maya is interested in</string>
+    <string name="london_remotely">London \u2022 Remotely</string>
+    <string name="rate">\u20ac 400/day \u2022 \u2605 100%</string>
+    <string name="senior_product_manager">Senior Product Manager...</string>
+</resources>
